@@ -9,9 +9,10 @@ const Section = () => {
 
                     <div className="texts">
                         <h1 className='h1-big'>Abdoul-Aziz CISSE</h1>
-                        <h3>Expert Informatique et systèmes d'information</h3>
-                        <h3>Jr Fullstack engineer</h3>
-                        <p>Currently looking for better opportunities</p>
+                        
+                        <h2>Jr Fullstack engineer</h2>
+                        <h5>Expert Informatique et systèmes d'information</h5>
+                        <p>Currently looking for opportunities</p>
                         <button className='text-button' href="/Projects">My projects</button>
                     </div>
 
