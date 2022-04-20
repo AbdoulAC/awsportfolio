@@ -12,7 +12,7 @@ const Section = () => {
                         <h3>Expert Informatique et systèmes d'information</h3>
                         <h3>Jr Fullstack engineer</h3>
                         <p>Currently looking for better opportunities</p>
-                        <button className='text-button'>My projects</button>
+                        <button className='text-button' href="/Projects">My projects</button>
                     </div>
 
                     <div className="image">
