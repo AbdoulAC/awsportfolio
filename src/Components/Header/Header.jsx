@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import {Link} from 'react-router-dom';
 import '../styles/Header.css'
 import {Data} from '../MenuItems/MenuItems'
+import {DiSqllite} from 'react-icons/di'
 
 const Header = () => {
     const [open, setOpen]=useState(false)
@@ -12,10 +13,11 @@ const Header = () => {
     }
   
     return (
-    <div className='header'>
-        <nav>
-            <div className="logo">
-                <h1>AAC portfolio</h1>
+    <div className='header' noWrap maxWidth="xl">
+        <nav  >
+            <div className="logo" sx={{ mr: 2, display: { xs: 'none', sm: 'flex' } }}>
+                
+                <h1> <DiSqllite size="2rem"/> AAC portfolio </h1>
             </div>
 
             <ul className='ul-items'>

@@ -33,15 +33,17 @@
 
 .text-3{
     color: #fff;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 45px;
     border: 2px solid #fff;
     padding: 40px;
     margin-left: 40px;
+    
+    
 }
 
 
 .text-3 p {
     border-top: 2px solid #fff ;
-
+    
 }
