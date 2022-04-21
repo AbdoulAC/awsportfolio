@@ -11,7 +11,7 @@ const projects = [
     id: uuidv4(),
     name: 'Nbadex',
     desc:
-      'A End to end Web application to track your all around Nba data from over 20 years. I developed the website and the mobile app is in development',
+      'An End to end Web application to track your all around Nba data from over 20 years.',
     img: Nbadex,
   },
   {
@@ -26,7 +26,7 @@ const projects = [
     id: uuidv4(),
     name: 'Plant Connectivity',
     desc:
-      'End to end data handling from a plant based model. It aimed for those data to be consumed by cloud hosted digital applications.',
+      'End to end data handling from a plant based model. Data consumed by cloud hosted digital applications.',
     img: Maquette,
   },
   
