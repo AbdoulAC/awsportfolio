@@ -1,5 +1,6 @@
 import React from 'react'
 import Pic2 from '../assets/Mypic2.png'
+import DotsLines from '../assets/DotsLines.gif'
 import Sectionstyle from '../styles/Section.css'
 import { useNavigate } from 'react-router-dom'      
 
@@ -8,14 +9,15 @@ const Section = () => {
   const Navigate = useNavigate()
   return (
     <section className='main-section'>
-            <div className="container" max-width='sm'>
+            <div className="container" max-width='xl'>
 
                     <div className="texts">
+                        <image src={DotsLines} alt=''/>
                         <h1 className='h1-big'>Abdoul-Aziz CISSE</h1>
                         
                         <h2>Jr Fullstack engineer</h2>
                         <h5>Expert Informatique et systèmes d'information</h5>
-                        <p>Currently looking for opportunities</p>
+                        <p>Currently open for opportunities</p>
                         <button className='text-button' onClick={()=>Navigate("/Projects")}>My projects</button>
                     </div>
 

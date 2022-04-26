@@ -11,18 +11,37 @@ const Header = () => {
     const showMenu = () =>{
         setOpen(!open)
     }
+
+
+    const [Button, setButton]=useState(false);
+
+    const showButtons = () =>{
+        if (window.innerWidth<=760){
+            setButton(true)
+        }else{
+            setButton(false)
+        }
+    
+        
+    }
+
+    window.addEventListener('resize', showButtons)
+
   
     return (
-    <div className='header' noWrap maxWidth="xl">
-        <nav  >
+    <div className='header'>
+
+
+        <nav className='navbar' >
             <div className="logo" sx={{ mr: 2, display: { xs: 'none', sm: 'flex' } }}>
-                
-                <h1> <DiSqllite size="2rem"/> AAC portfolio </h1>
+                <Link to='#' className='NavbarLogoLink'>
+                <h2> <DiSqllite size="2rem"/> AAC portfolio </h2>
+                </Link>
             </div>
 
-            <ul className='ul-items'>
-                <li>
-                    <Link to='#'>Home </Link>
+             <ul className='ul-items'>
+              {!Button &&<><li>
+                    <Link to='#' onClick={showMenu}>Home </Link>
                 </li>
 
                 <li>
@@ -35,13 +54,14 @@ const Header = () => {
 
                 <li>
                     <Link to='/Second'>About </Link>
-                </li>
+                </li></>
+                }
 
 
-                <div className="hamburger-menu">
+                {Button && <div className="hamburger-menu">
                     <MenuOutlined className='menu' onClick={showMenu}/>
                 </div>
-
+                }
 
             </ul>
 
