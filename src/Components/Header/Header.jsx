@@ -34,14 +34,19 @@ const Header = () => {
 
         <nav className='navbar' >
             <div className="logo" sx={{ mr: 2, display: { xs: 'none', sm: 'flex' } }}>
-                <Link to='#' className='NavbarLogoLink'>
+                <Link to='#' onClick={showMenu} className='NavbarLogoLink'>
                 <h2> <DiSqllite size="2rem"/> AAC portfolio </h2>
                 </Link>
             </div>
 
              <ul className='ul-items'>
-              {!Button &&<><li>
-                    <Link to='#' onClick={showMenu}>Home </Link>
+              {!Button &&<>
+                <li>
+                    <Link to='#' onClick={showMenu}>Menu </Link>
+                </li>
+
+                <li>
+                    <Link to='/Second'>About Me</Link>
                 </li>
 
                 <li>
@@ -49,12 +54,10 @@ const Header = () => {
                 </li>
 
                 <li>
-                    <Link to='/Contact'>Contact </Link>
+                    <Link to='/Contact'>Tech stack </Link>
                 </li>
 
-                <li>
-                    <Link to='/Second'>About </Link>
-                </li></>
+               </>
                 }
 
 

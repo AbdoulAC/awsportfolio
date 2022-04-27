@@ -19,6 +19,7 @@ const SectionTitleStyle = styled.div`
     text-align: center;
     p {
       font-size: 1.2rem;
+      
     }
     h2 {
       font-size: 3.6rem;

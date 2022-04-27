@@ -4,7 +4,7 @@ import './index.css';
 import { BrowserRouter as Router, Routes, Route  } from 'react-router-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Contact from './Components/Contact/Contact';
+import TechStack from './Components/TechStack/TechStack';
 import Projects from './Components/Projects/Projects';
 import Second from './Components/Second/Second';
 import Section from './Components/Section/Section';
@@ -19,7 +19,7 @@ root.render(
           <Route path='/Section' element={<Section/>} />
           <Route path='/Second' element={<Second/>} />
           <Route path='/Projects' element={<Projects/>} />
-          <Route path='/contact' element={<Contact/>} />
+          <Route path='/TechStack' element={<TechStack/>} />
         </Routes>
 
       </Router>

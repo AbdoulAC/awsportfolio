@@ -26,7 +26,7 @@ const ProjectSectionStyle = styled.div`
     margin-top: 5rem;
   }
   .swiper-container {
-    padding-top: 8rem;
+    padding-top: 7rem;
     max-width: 100%;
   }
   .swiper-button-prev,
@@ -35,13 +35,13 @@ const ProjectSectionStyle = styled.div`
     
     height: 50px;
     width: 50px;
-    background: var(--deep-dark);
+    background: grey;
     z-index: 10;
     right: 60px;
     left: auto;
     top: 0;
     transform: translateY(50%);
-    color: var(--gray-1);
+    color: black;
     border-radius: 8px;
   }
   .swiper-button-next {
@@ -51,15 +51,25 @@ const ProjectSectionStyle = styled.div`
   .swiper-button-next::after {
     font-size: 2rem;
   }
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 1400px) {
     .projects__allItems {
       flex-direction: column;
-      max-width: 400px;
+      max-width: 100%;
+      
       margin: 0 auto;
       margin-top: 7rem;
       gap: 4rem;
       .projectItem__img {
         width: 100%;
+        align-items:center;
+        
+      }
+      .projectItem__img img {
+
+        display: block;
+  margin-left: auto;
+  margin-right: auto;
+        
       }
     }
   }
@@ -93,8 +103,9 @@ const Projects = () => {
                     },
                     }}
                 >
+                 
                     {projects.map((project, index) => {
-                    if (index >= 4) return;
+                    if (index >= 5) return;
                     return (
                         <SwiperSlide key={project.id}>
                         <ProjectItem
@@ -105,6 +116,7 @@ const Projects = () => {
                         </SwiperSlide>
                     );
                     })}
+                  
                 </Swiper>
                 </div>
                 
