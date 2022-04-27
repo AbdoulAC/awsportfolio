@@ -54,7 +54,7 @@ const Header = () => {
                 </li>
 
                 <li>
-                    <Link to='/Contact'>Tech stack </Link>
+                    <Link to='/TechStack'>Tech stack </Link>
                 </li>
 
                </>

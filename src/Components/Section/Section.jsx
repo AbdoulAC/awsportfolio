@@ -8,16 +8,11 @@ import { useNavigate, Link } from 'react-router-dom'
 
 const Section = () => {
   
-  
-  const routeChange = () =>{ 
-    let path = `https://github.com/AbdoulAC`; 
-    Navigate(path);
-  }
+
 
 
   const Navigate = useNavigate()
-  const github = 'https://github.com/AbdoulAC'
-  const absoulteUrl = new URL(github).href
+  
   return (
     <section className='main-section'>
             <div className="container" max-width='xl'>
@@ -35,7 +30,7 @@ const Section = () => {
                         <a href={'https://github.com/AbdoulAC'} target='_blank' className="github">
                             <img className='Github' src={GitHub}   />
                         </a>
-                            <a href={'/www.linkedin.com/in/aac-abdoul-aziz'} target='_blank' className="linkedin">
+                            <a href={'https://linkedin.com/in/aac-abdoul-aziz'} target='_blank' className="linkedin">
                             <img className='Linkedin' src={Linkedin} />
                             </a>
                         </div> 

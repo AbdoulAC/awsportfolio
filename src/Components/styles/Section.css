@@ -89,7 +89,22 @@
  
     clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 39% 100%, 0% 50%, 36% 0%);
 
-    background-color: rgb(49, 66, 80);
+   
+    background: linear-gradient(-45deg,  rgb(49, 66, 80), #767891, #41627a, #dcebe8);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 
@@ -149,7 +164,7 @@
 
     .image{
         clip-path: polygon(20% 8%, 80% 8%, 100% 100%, 0% 100%);
-        background-color: rgb(49, 66, 80);
+        
         width: 100%;
     }
 
@@ -188,7 +203,7 @@
 
     .image{
         clip-path: polygon(20% 8%, 80% 8%, 100% 100%, 0% 100%);
-        background-color: rgb(49, 66, 80);
+       
         width: 100%;
 
 
