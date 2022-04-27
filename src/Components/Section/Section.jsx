@@ -28,7 +28,8 @@ const Section = () => {
                         
                         <h2>Jr Fullstack engineer</h2>
                         <h5>Expert Informatique et systèmes d'information</h5>
-                        <p>Currently open for opportunities</p>
+                        <p>Eager to learn -<br/> Currently open for work </p>
+                    
                         <button className='text-button' onClick={()=>Navigate("/Projects")}>My projects</button>
                         <div className='Contacts'>  
                         <a href={'https://github.com/AbdoulAC'} target='_blank' className="github">

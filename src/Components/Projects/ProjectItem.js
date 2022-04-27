@@ -6,11 +6,11 @@ import ProjectImg from '../assets/Nbadex.png';
 const ProjectItemStyles = styled.div`
   .projectItem__img {
     width: 100%;
-    height: 400px;
+    height: 500px;
     border-radius: 12px;
     overflow: hidden;
     display: inline-block;
-    border: 3px solid black;
+    border: 1px solid grey;
     img {
       height: 100%;
     }
@@ -32,6 +32,8 @@ const ProjectItemStyles = styled.div`
   @media only screen and (max-width: 1200px) {
     .projectItem__img {
       height: 350px;
+    
+   
     }
   }
 `;

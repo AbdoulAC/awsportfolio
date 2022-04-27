@@ -23,10 +23,10 @@ const ProjectSectionStyle = styled.div`
   .projects__allItems {
     display: flex;
     gap: 3rem;
-    margin-top: 5rem;
+    margin-top: 4rem;
   }
   .swiper-container {
-    padding-top: 7rem;
+    padding-top: 6rem;
     max-width: 100%;
   }
   .swiper-button-prev,
@@ -35,7 +35,7 @@ const ProjectSectionStyle = styled.div`
     
     height: 50px;
     width: 50px;
-    background: grey;
+    background: transparent;
     z-index: 10;
     right: 60px;
     left: auto;
@@ -65,10 +65,11 @@ const ProjectSectionStyle = styled.div`
         
       }
       .projectItem__img img {
-
+        border: 3px solid black;
+        border-radius:2px;
         display: block;
-  margin-left: auto;
-  margin-right: auto;
+        margin-left: auto;
+        margin-right: auto;
         
       }
     }
@@ -79,7 +80,7 @@ const Projects = () => {
   return (
             <>
             <ProjectSectionStyle>
-                     <SectionTitle subheading="Slide (right) throught some of my recent work" heading="Projects" />
+                     <SectionTitle subheading="Some of my recent work" heading="Projects" />
             <div className="container">
                
                 

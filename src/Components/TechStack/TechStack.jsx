@@ -12,6 +12,8 @@ const TechStack = () => {
           <div className="arrow-home">
             <Link to='#'><ArrowUpward className='arrow'/></Link>
           </div>
+
+          <span>TBD</span>
            
       </div>
    
