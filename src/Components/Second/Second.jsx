@@ -26,7 +26,7 @@ const Second = () => {
 
 
         </div>
-
+    
     </section>
 
 
