@@ -10,9 +10,10 @@ function App() {
     <div className="App">
         <Header/>
         <Section/>
+        <TechStack/>
         <Projects/>
         <Second/>
-        <TechStack/>
+       
     </div>
   );
 }

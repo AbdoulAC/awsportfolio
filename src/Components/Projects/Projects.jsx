@@ -19,14 +19,14 @@ import projects from '../assets/data/projects';
 SwiperCore.use([Navigation]);
 
 const ProjectSectionStyle = styled.div`
-  padding: 10rem 0;
+  padding: 6rem 0;
   .projects__allItems {
     display: flex;
     gap: 3rem;
-    margin-top: 4rem;
+    margin-top: 3rem;
   }
   .swiper-container {
-    padding-top: 6rem;
+    padding-top: 3rem;
     max-width: 100%;
   }
   .swiper-button-prev,
@@ -57,7 +57,8 @@ const ProjectSectionStyle = styled.div`
       max-width: 100%;
       
       margin: 0 auto;
-      margin-top: 7rem;
+      margin-top: 4rem;
+      margin-bottom:4rem;
       gap: 4rem;
       .projectItem__img {
         width: 100%;

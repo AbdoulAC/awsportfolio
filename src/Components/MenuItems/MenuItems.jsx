@@ -17,8 +17,8 @@ export const Data = [
         className:"Menuitem"
        },
     {
-     title: "Contact",
-     path: "/Contact",
+     title: "TechStack",
+     path: "/TechStack",
      className:"Menuitem"
     }
    ];

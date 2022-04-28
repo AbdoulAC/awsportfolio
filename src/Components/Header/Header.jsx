@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom';
 import '../styles/Header.css'
 import {Data} from '../MenuItems/MenuItems'
 import {DiSqllite} from 'react-icons/di'
+import * as Scroll from 'react-scroll';
 
 const Header = () => {
     const [open, setOpen]=useState(false)
@@ -25,6 +26,13 @@ const Header = () => {
         
     }
 
+     function scrollTo(link) {
+        scroll.scrollTo(link);
+      }
+
+      var Scroll = require('react-scroll');
+      var scroll = Scroll.animateScroll;
+
     window.addEventListener('resize', showButtons)
 
   
@@ -42,11 +50,11 @@ const Header = () => {
              <ul className='ul-items'>
               {!Button &&<>
                 <li>
-                    <Link to='#' onClick={showMenu}>Menu </Link>
+                    <Link to='/' onClick={showMenu}>Menu </Link>
                 </li>
-
+                
                 <li>
-                    <Link to='/Second'>About Me</Link>
+                    <Link to='/TechStack'> Tech stack</Link>
                 </li>
 
                 <li>
@@ -54,8 +62,12 @@ const Header = () => {
                 </li>
 
                 <li>
-                    <Link to='/TechStack'>Tech stack </Link>
+                    <Link to='/Second' activeClass="active" >About Me</Link>
                 </li>
+
+               
+
+             
 
                </>
                 }

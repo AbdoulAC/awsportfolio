@@ -10,19 +10,20 @@ const SectionTitleStyle = styled.div`
 }
   h2 {
     font-family: 'Noto Sans JP', sans-serif;
-    font-size: 6rem;
+    font-size: 5rem;
     margin-top: 0.5rem;
     text-transform: uppercase;
     
   }
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 1400px) {
     text-align: center;
     p {
       font-size: 1.2rem;
       word-break: normal;
     }
     h2 {
-      font-size: 3.6rem;
+      font-size: 3rem;
+      
       word-break: normal;
     }
   }

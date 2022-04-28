@@ -5,7 +5,8 @@
     width: 100%;
     height: 150vh;
     background-color: black;
-    border: 5px solid grey;
+    border: 3px solid grey;
+    border-top: none;
     font-family: 'Noto Sans JP', sans-serif;
 
 }
