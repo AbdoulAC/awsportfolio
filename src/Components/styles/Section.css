@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&family=Noto+Sans+JP:wght@300&family=Noto+Serif+JP:wght@300&display=swap');
 
-.texts image{
-    position:absolute;
-    height: 100vh;
-    z-index:-1;
-}
+
 
 .main-section{
     width: 100%;
@@ -22,8 +18,12 @@
 }
 
 .texts{
-    margin-left: 7rem;
+    white-space: nowrap;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     text-transform: uppercase;
+    padding: 2rem;
 }
 
 .texts h1{
@@ -37,6 +37,18 @@
 
 }
 
+.Github{
+    width: 50px;
+    height: 50px;
+
+}
+
+
+.Linkedin{
+    width: 50px;
+    height: 50px;
+    margin-left: 1rem;
+}
 
 .texts h2{
     margin-top: 1rem;
@@ -51,46 +63,15 @@
     text-transform: lowercase;
 }
 
-@media screen and (max-width: 960px){    
-    .texts h1-big{
-        font-size: 70px;
-        margin-top: -150px;
-    }
-
-}
-
-.Github{
-    width: 50px;
-    height: 50px;
-
-}
-
-
-.Linkedin{
-    width: 50px;
-    height: 50px;
-
-}
-.text-button{
-    margin-top: 1.2rem;
-    padding: 14px 35px;
-    cursor: pointer;
-    background-color: rgb(59, 55, 55);
-    color: #fff ;
-    border:none;
-    border-radius: 3px;
-}
-
-
 
 .image{
  
     clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 39% 100%, 0% 50%, 36% 0%);
-
+    height: auto;
    
     background: linear-gradient(-45deg,  rgb(49, 66, 80), #767891, #41627a, #dcebe8);
     background-size: 400% 400%;
-    animation: gradient 10s ease infinite;
+    animation: gradient 5s ease infinite;
 }
 
 @keyframes gradient {
@@ -104,6 +85,28 @@
         background-position: 0% 50%;
     }
 }
+
+
+@media screen and (max-width: 960px){    
+    .texts h1-big{
+        font-size: 70px;
+        margin-top: -150px;
+    }
+
+}
+
+
+.text-button{
+    margin-top: 1.2rem;
+    padding: 14px 35px;
+    cursor: pointer;
+    background-color: rgb(59, 55, 55);
+    color: #fff ;
+    border:none;
+    border-radius: 3px;
+}
+
+
 
 
 @media screen and (max-width: 600px){
@@ -160,15 +163,10 @@
 @media screen and (max-width: 550px){
     
 
-    .image{
-        clip-path: polygon(20% 8%, 80% 8%, 100% 100%, 0% 100%);
-        
-        width: 100%;
-    }
-
     .image img{
         align-items: center;
         margin-right: 2rem;
+        height: auto;
     }
 
     .texts .h1-big{
@@ -187,22 +185,16 @@
 
 
 
-@media screen and (max-width: 375px) and (max-height : 670px){
+@media screen and (max-width:400px){
   
-    .texts{
-        margin-right: 6rem;
-        margin-top: 1rem;
-        text-transform: uppercase;
-        display:grid;
-        text-align: center;
-        
-    }
 
     .image{
         clip-path: polygon(20% 8%, 80% 8%, 100% 100%, 0% 100%);
-       
+        flex:50%;
         width: 100%;
-
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
 
     }
 
@@ -219,6 +211,6 @@
 @media screen and (max-width: 390px) and (max-height : 890px){
     .main-section{
         width: 100%;
-        height: 110vh;
+        height: auto;;
     }
 }

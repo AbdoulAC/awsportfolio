@@ -34,7 +34,7 @@ const Section = () => {
                             <img className='Linkedin' src={Linkedin} />
                             </a>
                         </div> 
-                    </div>
+                  </div>
 
                     <div className="image">
                         <img src={Pic2} alt=""/>

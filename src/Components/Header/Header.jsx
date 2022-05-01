@@ -1,5 +1,6 @@
 import { MenuOutlined } from '@mui/icons-material';
-import React, { useState } from 'react';
+import CloseIcon from '@mui/icons-material/Close';
+import React, { useState, useEffect } from 'react';
 import {Link} from 'react-router-dom';
 import '../styles/Header.css'
 import {Data} from '../MenuItems/MenuItems'
@@ -17,14 +18,14 @@ const Header = () => {
     const [Button, setButton]=useState(false);
 
     const showButtons = () =>{
-        if (window.innerWidth<=760){
+        if (window.innerWidth<=960){
             setButton(true)
         }else{
             setButton(false)
-        }
-    
-        
+        }  
     }
+
+  
 
      function scrollTo(link) {
         scroll.scrollTo(link);
@@ -84,17 +85,23 @@ const Header = () => {
         </nav>
         
         <nav className={open ? 'slider active' : 'slider'}>
-            <ul className='slider-ul' onClick={showMenu}>
-                {Data.map((item, index) => {
-                    return(
-                            <li key={index} className={item.className}>
-                                <Link to={item.path}>{item.title}</Link>
-                            </li>
+                    <div className="closing-menu-icon">
+                                <CloseIcon className='ClosingButton' onClick={showMenu} />
+                    </div>
+                
+                        <ul className='slider-ul' onClick={showMenu}>
+                            {Data.map((item, index) => {
+                                return(
+                                        
 
-
-                    )
-                })}
-            </ul>
+                                        <li key={index} className={item.className}>
+                                            <Link to={item.path}>{item.title}</Link>
+                                        </li>
+                                    
+                                )
+                            })}
+                        </ul>
+                    
         </nav>
 
 
