@@ -17,7 +17,7 @@ const TechStack = () => {
             <Link to='#'><ArrowUpward className='arrow'/></Link>
           </div>
 
-          <h1 className='Title' fontSize='2.5rem' > Tech Stack</h1>
+          <h1 className='Title' fontSize='2.5rem' > What I do</h1>
 
           <Grid container justifyContent="center" spacing={4}  alignItems="center">
             { Stack.map(( Stack ) => (
@@ -31,9 +31,10 @@ const TechStack = () => {
                                                               <CardMedia className='CardMedia'  image={Stack.img} title={Stack.name}/>
                                                               </div>
                                                                 <CardContent>
-                                                                    <Typography variant='h2' fontSize='35px' textAlign="center"> {Stack.name}</Typography>
-                                                                    <div>
-                                                                            <Typography variant='subtitle2' textAlign="center" margin-top='2rem'>
+                                                                    <Typography variant='h2' className='CardText' fontSize='35px' textAlign="center"> {Stack.name}</Typography>
+                                                                    <div>   
+                                                                    
+                                                                            <Typography  variant='subtitle2' textAlign="center" margin-top='2rem'>
                                                                             {Stack.tags.map( (tag)=> 
                                                                               <Chip label={tag} />
                                                                               )} 

@@ -14,6 +14,7 @@ const Header = () => {
         setOpen(!open)
     }
 
+    // Header prevents click on small screens
 
     const [Button, setButton]=useState(false);
 
@@ -43,12 +44,13 @@ const Header = () => {
 
         <nav className='navbar' >
             <div className="logo" sx={{ mr: 2, display: { xs: 'none', sm: 'flex' } }}>
-                <Link to='#' onClick={showMenu} className='NavbarLogoLink'>
-                <h2> <DiSqllite size="2rem"/> AAC portfolio </h2>
+                
+                <Link to='/' onClick={showMenu} className='NavbarLogoLink'>
+                     <h2> <DiSqllite size="2rem"/> AAC portfolio </h2>
                 </Link>
             </div>
 
-             <ul className='ul-items'>
+            <ul className='ul-items'>
               {!Button &&<>
                 <li>
                     <Link to='/' onClick={showMenu}>Menu </Link>

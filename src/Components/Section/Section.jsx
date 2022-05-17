@@ -4,7 +4,7 @@ import GitHub from '../assets/GitHub.png'
 import Linkedin from '../assets/Linkedin.png'
 import Sectionstyle from '../styles/Section.css'
 import { useNavigate, Link } from 'react-router-dom'      
-
+import { motion } from 'framer-motion'
 
 const Section = () => {
   
@@ -13,6 +13,9 @@ const Section = () => {
 
   const Navigate = useNavigate()
   
+  const transition = {duration:2, type:'spring'}
+
+
   return (
     <section className='main-section'>
             <div className="container" max-width='xl'>
@@ -36,8 +39,12 @@ const Section = () => {
                         </div> 
                   </div>
 
-                    <div className="image">
-                        <img src={Pic2} alt=""/>
+                    <div  
+                        className="image">
+
+                        <img
+                            className='headshot' src={Pic2} alt=""/>
+
                     </div>
 
 

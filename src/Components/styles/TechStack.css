@@ -2,7 +2,7 @@
     width: 100%;
     height: auto;
     margin-bottom: 1rem;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Noto Sans JP','Sen', sans-serif;
     
     overflow: hidden;
 }
@@ -12,6 +12,9 @@
     margin-bottom: 3rem;
 }
 
+.CardText{
+    font-family: 'Noto Sans JP','Sen', sans-serif;
+}
 
 
 .CardMedia{
@@ -37,17 +40,4 @@ a .arrow{
 
     }
 
-    @media screen and (max-width: 390px) and (max-height:850px){    
-        .TechStack{
-            width: 100%;
-            height: auto;}
-    
-        }  
-    @media screen and (max-width: 375px) and (max-height:670px){    
-        .TechStack{
-            width: 100%;
-            height: auto;}
-    
-        }
-    
          
