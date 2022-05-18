@@ -23,6 +23,8 @@ const Header = () => {
             setButton(true)
         }else{
             setButton(false)
+          
+
         }  
     }
 
@@ -53,19 +55,19 @@ const Header = () => {
             <ul className='ul-items'>
               {!Button &&<>
                 <li>
-                    <Link to='/' onClick={showMenu}>Menu </Link>
+                    <Link to='/' spy={true} smooth={true} offset={50} duration={500} onClick={showMenu}>Menu </Link>
                 </li>
                 
                 <li>
-                    <Link to='/TechStack'> Tech stack</Link>
+                    <Link to='/TechStack' spy={true} smooth={true} offset={50} duration={500}> Tech stack</Link>
                 </li>
 
                 <li>
-                    <Link to='/Projects'>Projects </Link>
+                    <Link to='/Projects' spy={true} smooth={true} offset={50} duration={500}>Projects </Link>
                 </li>
 
                 <li>
-                    <Link to='/Second' activeClass="active" >About Me</Link>
+                    <Link to='/Second' spy={true} smooth={true} offset={50} duration={500}>About Me</Link>
                 </li>
 
                

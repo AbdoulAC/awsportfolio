@@ -46,16 +46,17 @@ nav{
 }
 
 .ul-items li a{
-    color: rgb(40, 40, 40);
+    color: rgb(0, 0, 0);
     text-decoration: none;
     text-transform: uppercase;
+    transition: all 0.1s ease-in;
 } 
 
 .ul-items li a:hover{
     cursor:pointer;
-    color:var(--gray);
-    border-bottom: 1.5px solid #000;
-    transition: all 0.01s ease-out;
+    color:var(--blueCard);
+    font-size: 20px;
+    transition: all 0.1s ease-in-out;
 }
 
 .hamburger-menu{

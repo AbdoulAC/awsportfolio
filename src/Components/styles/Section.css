@@ -63,6 +63,24 @@
     text-transform: lowercase;
 }
 
+.text-button{
+    margin-top: 1.2rem;
+    padding: 14px 35px;
+    cursor: pointer;
+    background-color: rgb(59, 55, 55);
+    color: #fff ;
+    border:none;
+    border-radius: 0.5rem;
+    transition: all 0.8s ease-out;
+}
+
+.text-button:hover{
+    background-color: rgb(255, 255, 255);
+    transition: all 0.4s ease-in;
+    color: rgb(0, 0, 0) ;
+    border: solid 1px;
+    
+}
 
 .image{
  
@@ -72,6 +90,9 @@
     background-size: 400% 400%;
     animation: gradient 5s ease infinite;
 }
+
+
+
 
 @keyframes gradient {
     0% {
@@ -94,16 +115,6 @@
 
 }
 
-
-.text-button{
-    margin-top: 1.2rem;
-    padding: 14px 35px;
-    cursor: pointer;
-    background-color: rgb(59, 55, 55);
-    color: #fff ;
-    border:none;
-    border-radius: 3px;
-}
 
 
 

@@ -18,42 +18,45 @@ const TechStack = () => {
           </div>
 
           <h1 className='Title' fontSize='2.5rem' > What I do</h1>
-
-          <Grid container justifyContent="center" spacing={4}  alignItems="center">
-            { Stack.map(( Stack ) => (
-                                        
-                                                <Grid item key={Stack.id} xs={12} sm={6} md={6} lg={6} >
-                                                    
-                                                  
-                                                    <Container maxWidth="sm">
-                                                        <Card variant="outlined">
-                                                              <div className="cardmediaimage">
-                                                              <CardMedia className='CardMedia'  image={Stack.img} title={Stack.name}/>
-                                                              </div>
-                                                                <CardContent>
-                                                                    <Typography variant='h2' className='CardText' fontSize='35px' textAlign="center"> {Stack.name}</Typography>
-                                                                    <div>   
-                                                                    
-                                                                            <Typography  variant='subtitle2' textAlign="center" margin-top='2rem'>
-                                                                            {Stack.tags.map( (tag)=> 
-                                                                              <Chip label={tag} />
-                                                                              )} 
-                                                                            </Typography>
-                                                                            {/* <CardActions disableSpacing className={classes.CardActions}></CardActions> */}
+          
+          
+          <div className='BigGrid'>
+                <Grid className='Grid' container justifyContent="center" spacing={4}  alignItems="center">
+                  { Stack.map(( Stack ) => (
+                                                      
+                                                      <Grid item key={Stack.id} xs={12} sm={6} md={6} lg={6} >
+                                                          
+                                                          <div className="GridContainer">
+                                                          <Container maxWidth="sm">
+                                                              <Card elevation='3'>
+                                                                    <div className="cardmediaimage">
+                                                                    <CardMedia className='CardMedia'  image={Stack.img} title={Stack.name}/>
                                                                     </div>
-                                                                </CardContent>
-                                                        </Card>
-                                                      </Container>
+                                                                      <CardContent>
+                                                                          <Typography variant='h2' className='CardText' fontSize='35px' textAlign="center"> {Stack.name}</Typography>
+                                                                          <div>   
+                                                                          
+                                                                                  <Typography  variant='subtitle2' textAlign="center" >
+                                                                                  {Stack.tags.map( (tag)=> 
+                                                                                    <Chip label={tag} />
+                                                                                    )} 
+                                                                                  </Typography>
+                                                                                  {/* <CardActions disableSpacing className={classes.CardActions}></CardActions> */}
+                                                                          </div>
+                                                                      </CardContent>
+                                                              </Card>
+                                                            </Container>
+                                                            </div>
+                                                      </Grid>
+
                                                     
-                                                </Grid>
-                                        
-                                        )) 
-                                      }
+                                              
+                                              )) 
+                                            }
 
-          </Grid>
-
-
-           
+                </Grid>
+      
+                </div>
       </div>
    
   )

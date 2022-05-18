@@ -6,6 +6,26 @@
     
     overflow: hidden;
 }
+
+.Grid{
+    margin-bottom: 2rem;
+}
+
+.BigGrid{
+    margin-bottom: 2rem;
+}
+
+.GridContainer{
+    
+    transition: all 0.3s ease-in;
+}
+
+.GridContainer:hover{
+    transform: scale(1.1);
+    
+    transition: all 0.15s ease-in;
+}
+
 .Title{
     text-align: center;
     
