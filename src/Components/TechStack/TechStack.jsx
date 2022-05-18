@@ -12,7 +12,7 @@ const TechStack = () => {
 
 
   return (
-      <div className='TechStack'>
+      <div className='TechStack' id='TechStack'>
           <div className="arrow-home">
             <Link to='#'><ArrowUpward className='arrow'/></Link>
           </div>
@@ -56,7 +56,7 @@ const TechStack = () => {
 
                 </Grid>
       
-                </div>
+            </div>
       </div>
    
   )

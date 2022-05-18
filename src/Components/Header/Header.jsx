@@ -1,7 +1,7 @@
 import { MenuOutlined } from '@mui/icons-material';
 import CloseIcon from '@mui/icons-material/Close';
 import React, { useState, useEffect } from 'react';
-import {Link} from 'react-router-dom';
+import {Link} from 'react-scroll';
 import '../styles/Header.css'
 import {Data} from '../MenuItems/MenuItems'
 import {DiSqllite} from 'react-icons/di'
@@ -47,7 +47,7 @@ const Header = () => {
         <nav className='navbar' >
             <div className="logo" sx={{ mr: 2, display: { xs: 'none', sm: 'flex' } }}>
                 
-                <Link to='/' onClick={showMenu} className='NavbarLogoLink'>
+                <Link to='Section' offset={50} className='NavbarLogoLink'>
                      <h2> <DiSqllite size="2rem"/> AAC portfolio </h2>
                 </Link>
             </div>
@@ -55,19 +55,19 @@ const Header = () => {
             <ul className='ul-items'>
               {!Button &&<>
                 <li>
-                    <Link to='/' spy={true} smooth={true} offset={50} duration={500} onClick={showMenu}>Menu </Link>
+                    <Link to='/' spy={true} smooth={true} offset={50} duration={500} onClick={showMenu}>SomeLink</Link>
                 </li>
                 
                 <li>
-                    <Link to='/TechStack' spy={true} smooth={true} offset={50} duration={500}> Tech stack</Link>
+                    <Link to='TechStack' spy={true} smooth={true} offset={50} duration={500}> Tech stack</Link>
                 </li>
 
                 <li>
-                    <Link to='/Projects' spy={true} smooth={true} offset={50} duration={500}>Projects </Link>
+                    <Link to='Projects' spy={true} smooth={true} offset={50} duration={500}>Projects </Link>
                 </li>
 
                 <li>
-                    <Link to='/Second' spy={true} smooth={true} offset={50} duration={500}>About Me</Link>
+                    <Link to='Second' spy={true} smooth={true} offset={50} duration={500}>About Me</Link>
                 </li>
 
                

@@ -79,7 +79,7 @@ const ProjectSectionStyle = styled.div`
 
 const Projects = () => {
   return (
-            <>
+          <div className='Projects' id='Projects'>
             <ProjectSectionStyle>
                      <SectionTitle subheading="Some of my recent work" heading="Projects" />
             <div className="container">
@@ -124,7 +124,7 @@ const Projects = () => {
                 
       </div>
       </ProjectSectionStyle>
-    </>
+    </div>
   )
 }
 
