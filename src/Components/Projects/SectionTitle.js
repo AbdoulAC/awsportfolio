@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 const SectionTitleStyle = styled.div`
 
-@import url('https://fonts.googleapis.com/css2?family=Adamina&family=Noto+Sans+JP:wght@300&family=Noto+Serif+JP:wght@300&display=swap');
 
   
 text-align: center;

@@ -7,7 +7,8 @@ import Hokusai from '../assets/V1_hokusai.png';
 import ProjectStyle from '../styles/Projects.css';
 import styled from 'styled-components';
 import Header from '../Header/Header';
-
+import {DiSqllite} from 'react-icons/di'
+import {Link} from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation } from 'swiper';
 import ProjectItem from './ProjectItem';
@@ -55,7 +56,7 @@ const ProjectSectionStyle = styled.div`
     .projects__allItems {
       flex-direction: column;
       max-width: 100%;
-      
+      position: absolute
       margin: 0 auto;
       margin-top: 4rem;
       margin-bottom:4rem;
@@ -81,8 +82,15 @@ const Projects = () => {
   return (
           <div className='Projects' id='Projects'>
             
+            <div className="logo" style={{position:'fixed', top:0, left:0}}>
+                
+                <Link to='/' offset={50} className='NavbarLogoLink'>
+                     <h2> <DiSqllite size="2rem"/> AAC portfolio </h2>
+                </Link>
+            </div>
+
             <ProjectSectionStyle>
-                     <SectionTitle subheading="Some of my recent work" heading="Projects" />
+                  <SectionTitle subheading="Some of my recent work" heading="Projects" />
             <div className="container">
                
                 
