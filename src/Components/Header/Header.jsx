@@ -2,6 +2,7 @@ import { MenuOutlined } from '@mui/icons-material';
 import CloseIcon from '@mui/icons-material/Close';
 import React, { useState, useEffect } from 'react';
 import {Link} from 'react-scroll';
+import {Link as Link1}  from 'react-router-dom';
 import '../styles/Header.css'
 import {Data} from '../MenuItems/MenuItems'
 import {DiSqllite} from 'react-icons/di'
@@ -63,11 +64,11 @@ const Header = () => {
                 </li>
 
                 <li>
-                    <Link to='Projects' spy={true} smooth={true} offset={50} duration={500}>Projects </Link>
+                    <Link1 to='Projects' >Projects </Link1>
                 </li>
 
                 <li>
-                    <Link to='Second' spy={true} smooth={true} offset={50} duration={500}>About Me</Link>
+                    <Link to='Second' spy={true} smooth={true} offset={50} duration={500}>Competences</Link>
                 </li>
 
                

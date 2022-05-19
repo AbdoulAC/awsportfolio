@@ -6,7 +6,7 @@ import Rest_Api from '../assets/Rest_Api.png';
 import Hokusai from '../assets/V1_hokusai.png';
 import ProjectStyle from '../styles/Projects.css';
 import styled from 'styled-components';
-
+import Header from '../Header/Header';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation } from 'swiper';
@@ -79,7 +79,8 @@ const ProjectSectionStyle = styled.div`
 
 const Projects = () => {
   return (
-         
+          <div className='Projects' id='Projects'>
+            
             <ProjectSectionStyle>
                      <SectionTitle subheading="Some of my recent work" heading="Projects" />
             <div className="container">
@@ -124,7 +125,7 @@ const Projects = () => {
                 
       </div>
       </ProjectSectionStyle>
-   
+    </div>
   )
 }
 

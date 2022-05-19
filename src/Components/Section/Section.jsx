@@ -5,7 +5,7 @@ import Linkedin from '../assets/Linkedin.png'
 import Sectionstyle from '../styles/Section.css'
 import { useNavigate} from 'react-router-dom'      
 import { motion } from 'framer-motion'
-import {Link} from 'react-scroll';
+import {Link} from 'react-router-dom';
 const Section = () => {
   
 
@@ -29,7 +29,7 @@ const Section = () => {
                             <h5>Expert Informatique et systèmes d'information</h5>
                             <p>Eager to learn -<br/> Currently open for work </p>
                         
-                            <button className='text-button'> <Link to='Projects' spy={true} smooth={true} offset={50} duration={500}>My Projects </Link></button>
+                            <button className='text-button' onClick={() => Navigate('Projects')}>My Projects</button>
                             <div className='Contacts'>  
                             <a href={'https://github.com/AbdoulAC'} target='_blank' className="github">
                                 <img className='Github' src={GitHub}   />
