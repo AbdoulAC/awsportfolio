@@ -16,10 +16,7 @@ root.render(
       <Router>
         <Routes>
           <Route path='/' element={<App/>} />
-          {/* <Route path='/Section' element={<Section/>} />
-          <Route path='/Second' element={<Second/>} />
-          <Route path='/Projects' element={<Projects/>} />
-          <Route path='/TechStack' element={<TechStack/>} /> */}
+          
         </Routes>
 
       </Router>

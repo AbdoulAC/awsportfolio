@@ -54,9 +54,9 @@ const Header = () => {
 
             <ul className='ul-items'>
               {!Button &&<>
-                <li>
+                {/* <li>
                     <Link to='/' spy={true} smooth={true} offset={50} duration={500} onClick={showMenu}>SomeLink</Link>
-                </li>
+                </li> */}
                 
                 <li>
                     <Link to='TechStack' spy={true} smooth={true} offset={50} duration={500}> Tech stack</Link>
