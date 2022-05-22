@@ -4,15 +4,15 @@
 .section-2{
     width: 100%;
     height: auto;
-    background-color: black;
-    border: 3px solid grey;
+    background-color: rgb(255, 255, 255);
+    border: none;
     border-top: none;
     font-family: 'Noto Sans JP','Sen', sans-serif;
 
 }
 
 .about-me{
-    color: #fff;
+    color: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
     margin-top: 1rem;
@@ -28,15 +28,15 @@
 
 .image-cont img{
     width: 400px;
-    border: 3px solid #fff;
+    border: 3px solid rgb(0, 0, 0);
 }
 
 
 .text-3{
-    color: #fff;
+    color: rgb(0, 0, 0);
     font-size: 20px;
     line-height: 45px;
-    border: 2px solid #fff;
+    border: 2px solid rgb(0, 0, 0);
     padding: 40px;
     margin-left: 40px;
     
@@ -45,7 +45,7 @@
 
 
 .text-3 p {
-    border-top: 2px solid #fff ;
+    border-top: 2px solid rgb(0, 0, 0) ;
     
 }
 
@@ -60,15 +60,15 @@
     .image-cont img{
         width: 324px;
         height: 550px;
-        border: 3px solid #fff;
+        border: 3px solid rgb(0, 0, 0);
     }
     
     .text-3 p {
-        border-top: 2px solid #fff ;
+        border-top: 2px solid rgb(0, 0, 0) ;
         
     }
     .text-3 {
-        border-top: 2px solid #fff ;
+        border-top: 2px solid rgb(0, 0, 0) ;
         margin-top: 5rem;
         margin-right: 3rem; 
     }
@@ -92,15 +92,15 @@
     .image-cont img{
         width: 285px;
         height: 550px;
-        border: 3px solid #fff;
+        border: 3px solid rgb(0, 0, 0);
     }
     
     .text-3 p {
-        border-top: 2px solid #fff ;
+        border-top: 2px solid rgb(0, 0, 0) ;
         
     }
     .text-3 {
-        border-top: 2px solid #fff ;
+        border-top: 2px solid rgb(0, 0, 0) ;
         margin-top: 5rem;
         margin-right: 3rem; 
     }

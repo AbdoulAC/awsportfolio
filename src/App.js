@@ -11,7 +11,7 @@ function App() {
         <Header/>
         <Section/>
         <TechStack/>
-        {/* <Projects/> Not wworking on prod*/}
+        <Projects/> 
         <Second/>
        
     </div>

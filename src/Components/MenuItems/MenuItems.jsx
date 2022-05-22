@@ -8,17 +8,17 @@ export const Data = [
     },
     {
      title: "About Me",
-     path: "/Second",
+     path: "Second",
      className:"Menuitem"
     },
     {
         title: "Projects",
-        path: "/Projects",
+        path: "Projects",
         className:"Menuitem"
        },
     {
      title: "TechStack",
-     path: "/TechStack",
+     path: "TechStack",
      className:"Menuitem"
     }
    ];

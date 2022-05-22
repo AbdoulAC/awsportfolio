@@ -1,6 +1,5 @@
 import { ArrowUpward, Input, Label } from '@mui/icons-material'
 import React from 'react'
-import { Link } from 'react-router-dom'
 import TechStackstyle from '../styles/TechStack.css'
 import {Grid} from '@material-ui/core';
 import Stack from './Stack';
@@ -13,9 +12,7 @@ const TechStack = () => {
 
   return (
       <div className='TechStack' id='TechStack'>
-          <div className="arrow-home">
-            <Link to='#'><ArrowUpward className='arrow'/></Link>
-          </div>
+          
 
           <h1 className='Title' fontSize='2.5rem' > What I do</h1>
           

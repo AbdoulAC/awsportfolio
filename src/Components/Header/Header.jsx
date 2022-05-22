@@ -64,7 +64,7 @@ const Header = () => {
                 </li>
 
                 <li>
-                    <Link1 to='Projects' >Projects </Link1>
+                    <Link to='Projects' spy={true} smooth={true} offset={50} duration={500}>Projects </Link>
                 </li>
 
                 <li>
@@ -100,7 +100,7 @@ const Header = () => {
                                         
 
                                         <li key={index} className={item.className}>
-                                            <Link to={item.path}>{item.title}</Link>
+                                            <Link to={item.path}  spy={true} smooth={true} offset={50} duration={500}>{item.title}</Link>
                                         </li>
                                     
                                 )
