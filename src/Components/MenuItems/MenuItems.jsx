@@ -4,21 +4,21 @@ export const Data = [
     {
      title: "Home",
      path: "/",
-     className:"Menuitem"
+     className:"BHome"
     },
     {
      title: "About Me",
      path: "Second",
-     className:"Menuitem"
+     className:"BSecond"
     },
     {
         title: "Projects",
         path: "Projects",
-        className:"Menuitem"
+        className:"BProjects"
        },
     {
      title: "TechStack",
      path: "TechStack",
-     className:"Menuitem"
+     className:"BTechStack"
     }
    ];

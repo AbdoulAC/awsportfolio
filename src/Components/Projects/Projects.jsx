@@ -7,7 +7,7 @@ import Hokusai from '../assets/V1_hokusai.png';
 import ProjectStyle from '../styles/Projects.css';
 import styled from 'styled-components';
 import Header from '../Header/Header';
-import {DiSqllite} from 'react-icons/di'
+import {motion} from 'framer-motion'
 import {Link} from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation } from 'swiper';
@@ -17,7 +17,7 @@ import 'swiper/swiper-bundle.min.css';
 import projects from '../assets/data/projects';
 
 
-SwiperCore.use([Navigation]);
+// SwiperCore.use([Navigation]);
 
 const ProjectSectionStyle = styled.div`
   padding: 6rem 0;
@@ -25,6 +25,7 @@ const ProjectSectionStyle = styled.div`
     display: flex;
     gap: 3rem;
     margin-top: 3rem;
+    font-family:  'Montserrat','Noto Sans JP', sans-serif;
   }
   .swiper-container {
     padding-top: 3rem;
@@ -37,12 +38,12 @@ const ProjectSectionStyle = styled.div`
     height: 50px;
     width: 50px;
     background: transparent;
-    z-index: 10;
+    z-index: 7;
     right: 60px;
     left: auto;
     top: 0;
-    transform: translateY(50%);
-    color: black;
+    transform: translateY(40%);
+    color: gray;
     border-radius: 8px;
   }
   .swiper-button-next {
@@ -64,7 +65,6 @@ const ProjectSectionStyle = styled.div`
       .projectItem__img {
         width: 100%;
         align-items:center;
-        
       }
       .projectItem__img img {
         border: 3px solid black;
@@ -80,60 +80,55 @@ const ProjectSectionStyle = styled.div`
 
 const Projects = () => {
   return (
-          <div className='Projects' id='Projects'>
-            
-            <div className="logo" style={{position:'fixed', top:0, left:0}}>
-                
-                <Link to='/' offset={50} className='NavbarLogoLink'>
-                     <h2> <DiSqllite size="2rem"/> AAC portfolio </h2>
-                </Link>
-            </div>
-
+          <motion.div
+          initial={{opacity:0}}
+          animate={{opacity:1}}
+          exit={{opacity:0}}
+          className='Projects' id='Projects'>
             <ProjectSectionStyle>
                   <SectionTitle subheading="Some of my recent work" heading="Projects" />
-            <div className="container">
-               
+                      <div className="container">  
+                          <div className="projects__allItems">
+                          <Swiper
+                          modules={[Navigation]}
+                              spaceBetween={10}
+                              slidesPerView={1}
+                              navigation
+                              breakpoints={{
+                              // when window width is >= 640px
+                              640: {
+                                  slidesPerView: 1,
+                              },
+                              // when window width is >= 768px
+                              768: {
+                                  slidesPerView: 1,
+                              },
+                              // when window width is >= 1200px
+                              1200: {
+                                  slidesPerView: 1,
+                              },
+                              }}
+                          >
+                          
+                              {projects.map((project, index) => {
+                              if (index >= 5) return;
+                              return (
+                                  <SwiperSlide key={project.id}>
+                                    <ProjectItem
+                                        title={project.name}
+                                        img={project.img}
+                                        desc={project.desc}
+                                    />
+                                  </SwiperSlide>
+                              );
+                              })}
+                            
+                          </Swiper>
+                          </div>
                 
-                <div className="projects__allItems">
-                <Swiper
-                    spaceBetween={10}
-                    slidesPerView={1}
-                    navigation
-                    breakpoints={{
-                    // when window width is >= 640px
-                    640: {
-                        slidesPerView: 1,
-                    },
-                    // when window width is >= 768px
-                    768: {
-                        slidesPerView: 1,
-                    },
-                    // when window width is >= 1200px
-                    1200: {
-                        slidesPerView: 1,
-                    },
-                    }}
-                >
-                 
-                    {projects.map((project, index) => {
-                    if (index >= 5) return;
-                    return (
-                        <SwiperSlide key={project.id}>
-                        <ProjectItem
-                            title={project.name}
-                            img={project.img}
-                            desc={project.desc}
-                        />
-                        </SwiperSlide>
-                    );
-                    })}
-                  
-                </Swiper>
-                </div>
-                
-      </div>
+                      </div>
       </ProjectSectionStyle>
-    </div>
+    </motion.div>
   )
 }
 

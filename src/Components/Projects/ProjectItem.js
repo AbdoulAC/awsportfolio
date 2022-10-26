@@ -16,24 +16,27 @@ const ProjectItemStyles = styled.div`
     }
   }
   .projectItem__info {
-    margin-top: 1rem;
-    background-color: white;
+    margin: 0 auto;
+    width: 100%
+    text-decoration:none;
+    background-color: transparent;
     padding: 1rem;
     border-radius: 12px;
   }
   .projectItem__title {
+    color:gray;
+    
     font-size: 2.2rem;
+    text-align:center;
   }
   .projectItem__desc {
     font-size: 1.6rem;
-    font-family:  'Noto Sans JP', sans-serif;
+    font-family:  'Montserrat','Noto Sans JP', sans-serif;
     margin-top: 1rem;
   }
   @media only screen and (max-width: 1200px) {
     .projectItem__img {
       height: 350px;
-    
-   
     }
   }
 `;

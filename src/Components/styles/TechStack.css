@@ -1,22 +1,11 @@
 .TechStack{
     width: 100%;
-    height: auto;
-    margin-bottom: 1rem;
-    font-family: 'Noto Sans JP','Sen', sans-serif;
-    
-    overflow: hidden;
+    height: 100%;
 }
 
-.Grid{
-    margin-bottom: 2rem;
-}
 
-.BigGrid{
-    margin-bottom: 2rem;
-}
-
-.GridContainer{
-    
+.GridContainer{  
+    height: 100%;
     transition: all 0.3s ease-in;
 }
 
@@ -28,35 +17,29 @@
 
 .Title{
     text-align: center;
-    
     margin-bottom: 3rem;
 }
 
-.CardText{
-    font-family: 'Noto Sans JP','Sen', sans-serif;
-}
 
 
 .CardMedia{
-    width: 70px;
-    height: 70px;
-   
+  
+   width: 70px;
+   height: 70px;
 }
 .cardmediaimage{
     display:flex;
     justify-content:center;
 }
 
-a .arrow{
-    color: #fff;
-    font-size: 50px;
-}
+
 
 
 @media screen and (max-width: 800px){    
     .TechStack{
         width: 100%;
-        height: auto;}
+        height: 100%;
+    }
 
     }
 

@@ -7,16 +7,16 @@ const SectionTitleStyle = styled.div`
   
 text-align: center;
   p {
-    font-family: 'Noto Sans JP','Sen', sans-serif;
+    font-family: 'Montserrat','Noto Sans JP','Sen', sans-serif;
     font-size: 1rem;
     color:grey;
 }
   h2 {
-    font-family: 'Noto Sans JP','Sen', sans-serif;
+    font-family:  'Montserrat','Noto Sans JP','Sen', sans-serif;
     font-size: 5rem;
     margin-top: 0.5rem;
     text-transform: uppercase;
-    
+    text-decoration:none,
   }
   @media only screen and (max-width: 1400px) {
     text-align: center;

@@ -1,14 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+Projects {
+  margin: 0;
+  width: auto;
+  
+  scroll-behavior: smooth;
+  font-family: 'Montserrat';
+}
+
+
 /* .Projects{
-    padding: 6rem 0;
+    padding: 2rem 0;
 }
 
 .projects__allItems {
     display: flex;
     gap: 3rem;
-    margin-top: 3rem;
+    margin-top: 0rem;
   }
   .swiper-container {
-    padding-top: 3rem;
+    padding-top: 2rem;
     max-width: 100%;
   }
   .swiper-button-prev,

@@ -3,15 +3,20 @@ import React from 'react'
 import TechStackstyle from '../styles/TechStack.css'
 import {Grid} from '@material-ui/core';
 import Stack from './Stack';
+import {motion} from 'framer-motion';
 import { Typography, Card, CardMedia, CardActions, CardContent, CssBaseline, Container } from '@mui/material';
 import { Chip } from '@mui/material';
+import '../styles/TechStack.css'
+
 
 const TechStack = () => {
- 
-
 
   return (
-      <div className='TechStack' id='TechStack'>
+      <motion.div
+      initial={{opacity:0}}
+      animate={{opacity:1}}
+      exit={{opacity:0}}
+      className='TechStack' id='TechStack'>
           
 
           <h1 className='Title' fontSize='2.5rem' > What I do</h1>
@@ -25,17 +30,17 @@ const TechStack = () => {
                                                           
                                                           <div className="GridContainer">
                                                           <Container maxWidth="sm">
-                                                              <Card elevation='3'>
+                                                              <Card elevation='4' >
                                                                     <div className="cardmediaimage">
                                                                     <CardMedia className='CardMedia'  image={Stack.img} title={Stack.name}/>
                                                                     </div>
                                                                       <CardContent>
-                                                                          <Typography variant='h2' className='CardText' fontSize='35px' textAlign="center"> {Stack.name}</Typography>
+                                                                          <Typography variant='h2' color='primary' className='CardText' fontSize='35px' textAlign="center"> {Stack.name}</Typography>
                                                                           <div>   
                                                                           
-                                                                                  <Typography  variant='subtitle2' textAlign="center" >
+                                                                                  <Typography  variant='subtitle2' textAlign="center"  >
                                                                                   {Stack.tags.map( (tag)=> 
-                                                                                    <Chip label={tag} />
+                                                                                    <Chip color='secondary' label={tag} />
                                                                                     )} 
                                                                                   </Typography>
                                                                                   {/* <CardActions disableSpacing className={classes.CardActions}></CardActions> */}
@@ -54,7 +59,7 @@ const TechStack = () => {
                 </Grid>
       
             </div>
-      </div>
+      </motion.div>
    
   )
 }

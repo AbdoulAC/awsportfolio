@@ -1,9 +1,134 @@
 *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+   
+}
+
+.App{
+  height:100%;
+  width: 100%;
+  min-width: 300px;
+  font-weight: 200;
+  overflow: hidden;
+}
+
+
+#light{
+  background-color: #F4F4E9;
+  transition :  ease-in 0.40s;
+  color:black;
+}
+/* 
+#266041; */
+#dark{
+  background-color: #2C3639 ;
+  color:white;
+  font-weight: 300;
+  transition :  ease-in 0.40s;
   
 }
+
+
+
+
+@keyframes slideInFromRight {
+  from{
+     transform: translateX(100%);
+     opacity: 0;
+   }
+   to {
+     transform: translateX(0);
+     opacity: 1;
+   }
+ }
+ @keyframes slideInFromLeft {
+   from{
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+
+.NavButtons{
+   position: relative;
+   font-size: large;
+   align-content: right;
+   z-index: 4;
+   text-align: center;
+   cursor: pointer;
+   height: 100%;  
+  
+}
+.Links{
+   text-decoration: none;
+   background-color: transparent;
+   font-weight: bold;
+   color: grey;
+}
+
+.BHome{   
+  
+   text-decoration: none;
+   position: fixed;
+   top: 10%;
+   z-index: 4;
+   margin: 2rem;   
+   border-radius: 20px;
+   font-weight:100;
+   padding:1rem;
+   text-align: center;
+   animation: 1s ease-in 0.5s 1 slideInFromLeft;
+   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+   backdrop-filter: blur(13.1px);
+   -webkit-backdrop-filter: blur(13.1px);
+   border: 1px solid rgba(178, 183, 154, 0.25);
+}
+.BSecond{   
+   position: fixed;
+   top: 30%;
+   z-index: 4;
+   margin: 2rem;   
+    border-radius: 20px;
+    font-weight:100;
+    padding:1rem;
+    animation: 1s ease-in 1s 1 slideInFromLeft; 
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+   backdrop-filter: blur(13.1px);
+   -webkit-backdrop-filter: blur(13.1px);
+   border: 1px solid rgba(178, 183, 154, 0.25);
+}
+.BProjects{
+   position: fixed;
+   margin: 2rem;   
+    top: 50%;
+    border-radius: 20px;
+    font-weight:100;
+    padding:1rem;
+    text-align: center;  
+    animation: 1s ease-in 1.5s 1 slideInFromLeft; 
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+       backdrop-filter: blur(13.1px);
+       -webkit-backdrop-filter: blur(13.1px);
+       border: 1px solid rgba(178, 183, 154, 0.25);
+}
+.BTechStack{ 
+   margin: 2rem;   
+   position: fixed;
+   top: 70%;
+   z-index: 4;
+    border-radius: 20px;
+    font-weight:100;
+       padding:1rem;
+       text-align: center;  
+    animation: 1s ease-in 2s 1 slideInFromLeft; 
+   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(13.1px);
+-webkit-backdrop-filter: blur(13.1px);
+border: 1px solid rgba(178, 183, 154, 0.25);
+}
+
 
 :root{
   --yellow:#F5C32C;
@@ -12,7 +137,5 @@
   --blueCard:#9d9ea8;
   --boxShadow: 0px 19px 60px rgb(0 0 0 /8%);
   --smboxShadow: -79px 51px 60px rgba(0,0,0, 0.08)
-
-
 
 }

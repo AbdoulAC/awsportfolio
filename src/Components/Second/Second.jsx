@@ -1,12 +1,15 @@
 import React from 'react'
 import '../styles/Second.css'
 import project from '../assets/project.jpg'
-
+import {motion} from 'framer-motion'
 
 const Second = () => {
   return (
 
-    <div className='Second' id='Second'>
+    <motion.div
+    initial={{opacity:0}}
+    animate={{opacity:1}}
+    exit={{opacity:0}} className='Second' id='Second'>
       <section className='section-2'>
           <h1 className="about-me"> About Me</h1>
           
@@ -30,7 +33,7 @@ const Second = () => {
           </div>
       
       </section>
-    </div>
+    </motion.div>
 
 
   )

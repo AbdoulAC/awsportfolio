@@ -5,20 +5,27 @@ import Nbadex from '../Nbadex.png';
 import Postgres from '../Postgres.png';
 import Rest_Api from '../Rest_Api.png';
 import Hokusai from '../V1_hokusai.png';
-
+import Nioro from '../Nioro.gif'
 const projects = [
+  {
+    id: uuidv4(),
+    name: 'Nioro',
+    desc:
+      'Landing web application for an upcoming Startup, implementation end to end.',
+    img: Nioro,
+  },
   {
     id: uuidv4(),
     name: 'Nbadex',
     desc:
-      'An End to end Web application to track your all around Nba data from over 20 years.',
+      'Web application to track your all around Nba data since over 20 years.',
     img: Nbadex,
   },
   {
     id: uuidv4(),
     name: 'Hokusai',
     desc:
-      'On going Web app using Vue.js, destined to be a sofisticated marketplace.',
+      'On going Web app using Vue.js.',
     img: Hokusai,
   },
  
@@ -26,7 +33,7 @@ const projects = [
     id: uuidv4(),
     name: 'Plant Connectivity',
     desc:
-      'End to end data handling from a plant based model. Data consumed by cloud hosted digital applications.',
+      'Data handling from a plant based model. Consumption of said data by cloud hosted digital applications.',
     img: Maquette,
   },
   
