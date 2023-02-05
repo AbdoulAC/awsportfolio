@@ -10,7 +10,7 @@ import Theme from "./Components/Theme/ColorPalette.jsx"
 import AnimatedTransition from './Components/Animation/AnimatedTransition';
 import { BrowserRouter as Router, Link as Routerlink, Routes , Route } from 'react-router-dom';
 import {Data} from './Components/MenuItems/MenuItems'
-
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 
 const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
@@ -28,16 +28,15 @@ function App() {
   
   
   
-  const [mode, setMode] = React.useState('light');
+  const [mode, setMode] = React.useState((useMediaQuery('(prefers-color-scheme: dark)') === true ) ? 'dark' : 'light');
 
 
   
-     console.log("updated");
-
   const ColorMode = React.useMemo(
-                    () => ({
-                            toggleColorMode: () => {
-                            setMode((mode) => (mode === 'light' ? 'dark' : 'light'));
+    () => ({
+      toggleColorMode: () => {
+        setMode((mode) => (mode === 'light' ? 'dark' : 'light'));
+        console.log("Color mode updated :)");
                             },
                            }),
                               [mode],
