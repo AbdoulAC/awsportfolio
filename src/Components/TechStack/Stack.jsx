@@ -10,20 +10,20 @@ const Stack = [
     {
       id: uuidv4(),
       name: 'Frontend',
-      tags: ['Html', 'Css','SASS','Javascript','Typescript','React', 'Vue.js', 'Nuxt', 'Bootstrap', 'Tailwindcss', 'Figma', 'Wordpress'],
+      tags: ['HTML', 'CSS/ScSS','Javascript','ReactJS','NextJs','Typescript','Vue.js','Nuxt','Bootstrap','Tailwindcss','Figma','Wordpress'],
       img:reactlogo,
     },
     {
         id: uuidv4(),
         name: 'Backend & Scripts',
-        tags: ['Django','NodeJs','Rest API','Postman','Jupyter','Python', 'Java', 'Javascript','C/C++'], 
-        img:java,
+        tags: ['Python','Django','NodeJs','ExpressJs','Rest API','Postman','Jupyter', 'Java','C/C++'], 
+        img:python,
       },
       {
         id: uuidv4(),
         name: 'Object Oriented Programming',
         tags: ['C/C++', 'Java', 'Javascript', 'Python'],
-        img:python,
+        img:java,
       },
       {
         id: uuidv4(),
@@ -35,7 +35,7 @@ const Stack = [
       {
         id: uuidv4(),
         name: 'DevOps - CI/CD',
-        tags: ['Github', 'Gitlab', 'Aws', 'Docker'],
+        tags: ['Github', 'Gitlab', 'Aws', 'Docker','Kubernetes'],
         img:GitHub,
       },
       {
