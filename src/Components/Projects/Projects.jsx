@@ -15,7 +15,8 @@ import ProjectItem from './ProjectItem';
 import SectionTitle from './SectionTitle';
 import 'swiper/swiper-bundle.min.css';
 import projects from '../assets/data/projects';
-
+import { Typography } from '@mui/material';
+import Theme from '../Theme/ColorPalette';
 
 // SwiperCore.use([Navigation]);
 
@@ -26,6 +27,7 @@ const ProjectSectionStyle = styled.div`
     gap: 3rem;
     margin-top: 3rem;
     font-family:  'Montserrat','Noto Sans JP', sans-serif;
+    align-items:center;
   }
   .swiper-container {
     padding-top: 3rem;
@@ -55,18 +57,22 @@ const ProjectSectionStyle = styled.div`
   }
   @media only screen and (max-width: 1400px) {
     .projects__allItems {
+      display:flex;
       flex-direction: column;
       max-width: 100%;
-      position: absolute
+      width:100vw
+      position: absolute;
       margin: 0 auto;
       margin-top: 4rem;
       margin-bottom:4rem;
       gap: 4rem;
       .projectItem__img {
-        width: 100%;
+        display:'flex';
         align-items:center;
+        width: 100vw;
       }
       .projectItem__img img {
+        align:'center';
         border: 3px solid black;
         border-radius:2px;
         display: block;
@@ -86,7 +92,10 @@ const Projects = () => {
           exit={{opacity:0}}
           className='Projects' id='Projects'>
             <ProjectSectionStyle>
-                  <SectionTitle subheading="Some of my recent work" heading="Projects" />
+                  <SectionTitle subheading="Some of my recent work" heading="Projects" >
+                    </SectionTitle>
+                  <div display='flex 'align='center'><Typography variant='caption' color='primary'  >[swipe from right to left]</Typography></div>
+                  
                       <div className="container">  
                           <div className="projects__allItems">
                           <Swiper
@@ -105,7 +114,7 @@ const Projects = () => {
                               },
                               // when window width is >= 1200px
                               1200: {
-                                  slidesPerView: 1,
+                                  slidesPerView: 1 ,
                               },
                               }}
                           >

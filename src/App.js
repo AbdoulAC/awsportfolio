@@ -57,13 +57,13 @@ function App() {
                                 return(
                                         
                                       <div className="NavButtons"  >
-                                          
+                                          <Routerlink to={item.path} className='Links' >
                                           <div key={index} className={item.className} >        
                                           
-                                            <div color='primary' > <Routerlink to={item.path} className='Links' >{item.title}</Routerlink></div>
+                                            <div color='primary' style={{fontWeight:'900'}}> {item.title}</div>
                                           
                                           </div>
-
+                                          </Routerlink>
                                       </div>
                                 )
                             })}

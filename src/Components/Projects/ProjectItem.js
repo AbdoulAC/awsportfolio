@@ -5,19 +5,22 @@ import ProjectImg from '../assets/Nbadex.png';
 
 const ProjectItemStyles = styled.div`
   .projectItem__img {
-    width: 100%;
-    height: 500px;
+    width: 50vw;
+    height: 50vh;
     border-radius: 12px;
     overflow: hidden;
     display: inline-block;
    
+    align:'center';
+    justify:'center';
     img {
       height: 100%;
     }
   }
   .projectItem__info {
     margin: 0 auto;
-    width: 100%
+    text-align:center;
+    width: 50vw;
     text-decoration:none;
     background-color: transparent;
     padding: 1rem;
@@ -36,7 +39,7 @@ const ProjectItemStyles = styled.div`
   }
   @media only screen and (max-width: 1200px) {
     .projectItem__img {
-      height: 350px;
+      height: 35vh;
     }
   }
 `;
