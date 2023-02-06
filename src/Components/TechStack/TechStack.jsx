@@ -1,7 +1,7 @@
 import { ArrowUpward, Input, Label } from '@mui/icons-material'
 import React from 'react'
 import TechStackstyle from '../styles/TechStack.css'
-import {Grid} from '@material-ui/core';
+import {Grid} from '@mui/material';
 import Stack from './Stack';
 import {motion} from 'framer-motion';
 import { Typography, Card, CardMedia, CardActions, CardContent, CssBaseline, Container } from '@mui/material';
