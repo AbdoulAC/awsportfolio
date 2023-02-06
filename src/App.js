@@ -1,10 +1,8 @@
 import './App.css';
-import React,{useEffect, useMemo} from "react";
-import Header from './Components/Header/Header';
-import Projects from './Components/Projects/Projects';
-import Second from './Components/Second/Second';
+import React,{useEffect, useMemo, useState, useContext} from "react";
+
 import Section from './Components/Section/Section';
-import TechStack from './Components/TechStack/TechStack';
+
 import { createTheme, ThemeProvider, useTheme, responsiveFontSizes} from '@mui/material/styles';
 import Theme from "./Components/Theme/ColorPalette.jsx"
 import AnimatedTransition from './Components/Animation/AnimatedTransition';
@@ -18,21 +16,17 @@ const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
 
 
 function App() {
-  const colorMode = React.useContext(ColorModeContext);
-  // console.log(colorMode);
-  // const theme = React.useMemo(() =>createTheme(Theme(colorMode)));
-  // const darkModeTheme = createTheme(Theme('dark'));
-  // // Theme = responsiveFontSizes(Theme);
-  // const preference =( (useMediaQuery('(prefers-color-scheme: dark)') === true ) ? 'dark' : 'light');
+  const colorMode = useContext(ColorModeContext);
+ 
  
   
   
   
-  const [mode, setMode] = React.useState((useMediaQuery('(prefers-color-scheme: dark)') === true ) ? 'dark' : 'light');
+  const [mode, setMode] = useState((useMediaQuery('(prefers-color-scheme: dark)') === true ) ? 'dark' : 'light');
 
 
   
-  const ColorMode = React.useMemo(
+  const ColorMode = useMemo(
     () => ({
       toggleColorMode: () => {
         setMode((mode) => (mode === 'light' ? 'dark' : 'light'));
@@ -46,7 +40,7 @@ function App() {
   
   
  
-    const theme = React.useMemo(() =>createTheme(Theme(mode)    
+    const theme = useMemo(() =>createTheme(Theme(mode)    
     
     ));
   return (

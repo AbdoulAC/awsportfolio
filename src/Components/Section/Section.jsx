@@ -56,10 +56,10 @@ const Section = (props) => {
                             
                                 <button className='text-button' onClick={() => Navigate('Projects')}>My Projects</button>
                                 <div className='Contacts'>  
-                                <a href={'https://github.com/AbdoulAC'} target='_blank' className="github">
+                                <a href={'https://github.com/AbdoulAC'} target='_blank'  rel="noreferrer" className="github">
                                     <img className='Github' src={GitHub}   />
                                 </a>
-                                    <a href={'https://linkedin.com/in/aac-abdoul-aziz'} target='_blank' className="linkedin">
+                                    <a href={'https://linkedin.com/in/aac-abdoul-aziz'} target='_blank'  rel="noreferrer" className="linkedin">
                                     <img className='Linkedin' src={Linkedin} />
                                     </a>
                                 </div> 
