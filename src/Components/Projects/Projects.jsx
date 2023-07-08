@@ -18,8 +18,8 @@ import projects from '../assets/data/projects';
 import { Typography } from '@mui/material';
 import Theme from '../Theme/ColorPalette';
 
-// SwiperCore.use([Navigation]);
-
+SwiperCore.use([Navigation]);
+// Swiper.use([Navigation]);
 const ProjectSectionStyle = styled.div`
   padding: 6rem 0;
   .projects__allItems {
@@ -36,11 +36,10 @@ const ProjectSectionStyle = styled.div`
   .swiper-button-prev,
   .swiper-button-next {
     position: absolute;
-    
     height: 50px;
     width: 50px;
     background: transparent;
-    z-index: 7;
+    z-index: 11;
     right: 60px;
     left: auto;
     top: 0;
@@ -78,7 +77,6 @@ const ProjectSectionStyle = styled.div`
         display: block;
         margin-left: auto;
         margin-right: auto;
-        
       }
     }
   }
@@ -102,7 +100,7 @@ const Projects = () => {
                           modules={[Navigation]}
                               spaceBetween={10}
                               slidesPerView={1}
-                              navigation
+                              navigation = {true}
                               breakpoints={{
                               // when window width is >= 640px
                               640: {

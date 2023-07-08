@@ -1,5 +1,5 @@
 import React from 'react'
-import Pic2 from '../assets/Mypic2.png'
+// import Pic2 from '../assets/Mypic2.png'
 import GitHub from '../assets/GitHub.png'
 import Linkedin from '../assets/Linkedin.png'
 import Sectionstyle from '../styles/Section.css'

@@ -5,12 +5,12 @@ import ProjectImg from '../assets/Nbadex.png';
 
 const ProjectItemStyles = styled.div`
   .projectItem__img {
+    margin: 0 auto;
     width: 50vw;
     height: 50vh;
     border-radius: 12px;
     overflow: hidden;
     display: inline-block;
-   
     align:'center';
     justify:'center';
     img {
@@ -18,17 +18,16 @@ const ProjectItemStyles = styled.div`
     }
   }
   .projectItem__info {
-    margin: 0 auto;
+    
     text-align:center;
-    width: 50vw;
+    width: 100vw;
     text-decoration:none;
     background-color: transparent;
     padding: 1rem;
     border-radius: 12px;
   }
   .projectItem__title {
-    color:gray;
-    
+    color:gray;S
     font-size: 2.2rem;
     text-align:center;
   }

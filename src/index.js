@@ -1,25 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import { BrowserRouter as Router, Routes, Route, useLocation  } from 'react-router-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import TechStack from './Components/TechStack/TechStack';
-import Projects from './Components/Projects/Projects';
-import Second from './Components/Second/Second';
-import Section from './Components/Section/Section';
+
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  
-
   <App />
-
-
-
-  
 );
 
 // root.render(

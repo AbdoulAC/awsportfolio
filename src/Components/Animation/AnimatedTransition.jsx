@@ -23,7 +23,6 @@ const AnimatedTransition = (props) => {
                                
                                 <Route path='TechStack' element={<TechStack/>} />
                                 <Route path='Second' element={<Second/>} />
-
                                 <Route path='Projects' element={<Projects/>}/>
                         </Routes>
 

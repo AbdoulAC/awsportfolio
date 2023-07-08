@@ -1,8 +1,6 @@
 import './App.css';
 import React,{useEffect, useMemo, useState, useContext} from "react";
-
 import Section from './Components/Section/Section';
-
 import { createTheme, ThemeProvider, useTheme, responsiveFontSizes} from '@mui/material/styles';
 import Theme from "./Components/Theme/ColorPalette.jsx"
 import AnimatedTransition from './Components/Animation/AnimatedTransition';
@@ -18,14 +16,8 @@ const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
 function App() {
   const colorMode = useContext(ColorModeContext);
  
- 
-  
-  
-  
   const [mode, setMode] = useState((useMediaQuery('(prefers-color-scheme: dark)') === true ) ? 'dark' : 'light');
 
-
-  
   const ColorMode = useMemo(
     () => ({
       toggleColorMode: () => {
@@ -35,11 +27,7 @@ function App() {
                            }),
                               [mode],
         );
-        
         console.log(mode);
-  
-  
- 
     const theme = useMemo(() =>createTheme(Theme(mode)    
     
     ));
@@ -50,9 +38,6 @@ function App() {
                
                   <Router>
                       <div>
-                            
-                            
-                              
                             {Data.map((item, index) => {
                                 return(
                                         
@@ -67,7 +52,6 @@ function App() {
                                       </div>
                                 )
                             })}
-                    
                         </div> 
                         <Routes>
                         <Route path='/' element={<Section changeTheme={ColorMode.toggleColorMode} />} />     
