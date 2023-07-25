@@ -52,7 +52,7 @@ const Section = (props) => {
                                 
                                 <h2>Fullstack engineer</h2>
                                 <h5>IT AND INFORMATION SYSTEMS EXPERT</h5>
-                                <p>Eager to learn -<br/> Currently open for work </p>
+                                <p>Eager to learn</p>
                             
                                 <button className='text-button' onClick={() => Navigate('Projects')}>My Projects</button>
                                 <div className='Contacts'>  

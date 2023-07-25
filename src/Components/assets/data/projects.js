@@ -15,13 +15,13 @@ const projects = [
       'Livescore Web application, find the freshest scores and sport data in no time !',
     img: Playground,
   },
-  {
-    id: uuidv4(),
-    name: 'Nioro',
-    desc:
-      'Landing web application for Nioro Startup, implementation made using Reactjs. Nextjs is to be added in the next version.',
-    img: Nioro,
-  },
+  // {
+  //   id: uuidv4(),
+  //   name: 'Nioro',
+  //   desc:
+  //     'Landing web application for Nioro Startup, implementation made using Reactjs. Nextjs is to be added in the next version.',
+  //   img: Nioro,
+  // },
   {
     id: uuidv4(),
     name: "Rest Api",
